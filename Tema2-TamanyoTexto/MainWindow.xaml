@@ -7,6 +7,42 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="Texto_TextBlock" Margin="30,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="45" HorizontalAlignment="Left" Width="752" Height="83" TextAlignment="Center" TextDecorations="{x:Null}" FontWeight="Bold" Foreground="#FF008BFF" Opacity="0.94">
+            <TextBlock.Effect>
+                <DropShadowEffect Direction="320" BlurRadius="2" ShadowDepth="3"/>
+            </TextBlock.Effect><Run Text="Desarrollo "/><Run Text="de Interfaces"/></TextBlock>
+        <RadioButton x:Name="Peque_RadioButton" Content="Pequeño" Tag="45" HorizontalAlignment="Left" Margin="158,303,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" IsChecked="True" Checked="cambiaTamanyo" RenderTransformOrigin="0.5,0.5" FontWeight="Bold">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="2" ScaleY="2"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <RadioButton x:Name="Mediano_RadioButton" Content="Mediano" Tag="45" HorizontalAlignment="Left" Margin="365,302,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" IsChecked="True" Checked="cambiaTamanyo" RenderTransformOrigin="0.5,0.5" FontWeight="Bold">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="2" ScaleY="2"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <RadioButton x:Name="Grande_RadioButton" Content="Grande" Tag="60"  HorizontalAlignment="Left" Margin="577,303,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Checked="cambiaTamanyo" RenderTransformOrigin="0.5,0.5" FontWeight="Bold">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="2" ScaleY="2"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
     </Grid>
 </Window>

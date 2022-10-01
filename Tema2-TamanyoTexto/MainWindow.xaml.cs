@@ -24,5 +24,10 @@ namespace Tema2_TamanyoTexto
         {
             InitializeComponent();
         }
+
+        private void cambiaTamanyo(object sender, RoutedEventArgs e)
+        {
+            Texto_TextBlock.FontSize = double.Parse((sender as RadioButton).Tag.ToString());
+        }
     }
 }
